@@ -42,7 +42,6 @@ public extension UINib{
     }
 }
 
-
 class ViewController: UIViewController,NoneCellDelegate,TwoCellDelegate {
     internal func textDEL() {
         print("aaa")
@@ -67,6 +66,7 @@ class ViewController: UIViewController,NoneCellDelegate,TwoCellDelegate {
         //rowHeight属性设置为UITableViewAutomaticDimension
         self.tableView.rowHeight = UITableViewAutomaticDimension;
         
+
         dataDelegate?.vc = self
     }
     
@@ -74,7 +74,18 @@ class ViewController: UIViewController,NoneCellDelegate,TwoCellDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    lazy var imgURLArr:[String] = {
+        
+        let a1 = "http://img.wowdsgn.com/topic/tuwen/640webp.jpg"
+        let a2  = "http://img.wowdsgn.com/topic/tuwen/640webp1.png"
+        let a3  = "http://img.wowdsgn.com/topic/tuwen/640webp%20(4)sd.jpg"
+        let a4  = "http://img.wowdsgn.com/topic/tuwen/640webp%20(5)sd.jpg"
+        let a5  = "http://img.wowdsgn.com/topic/tuwen/640webp%20(6)sd.jpg"
+        let a6  = "http://img.wowdsgn.com/topic/tuwen/640webp%20(8)sd.jpg"
+        let a7  = "http://img.wowdsgn.com/topic/tuwen/640webp%20(9)sd.jpg"
+        return [a1,a2,a3,a4,a5,a6,a7]
+    
+    }()
     lazy var catalog:[String] = {
         
         let a1 =

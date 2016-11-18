@@ -27,6 +27,13 @@ class SecondVC: UIViewController,NoneCellDelegate,TwoCellDelegate {
         tableView.register(UINib.nibName("NoneCellVC"), forCellReuseIdentifier:"NoneCellVC")
         tableView.register(UINib.nibName("TwoCellVC"), forCellReuseIdentifier:"TwoCellVC")
         dataDelegate?.vc = self
+        let url = "https://images2.cardekho.com/images/expertreviewseditor/large/maruti-swift/20160301_123827/maruti-swift0.jpg"
+  
+        UIImage.requestSize(for: URL.init(string: url)) { (url, size) in
+            print(url ?? "")
+            print(size)
+        }
+        print("cccccc")
     }
 
     override func didReceiveMemoryWarning() {

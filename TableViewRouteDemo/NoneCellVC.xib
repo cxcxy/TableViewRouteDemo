@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -14,29 +15,29 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="91" id="KGk-i7-Jjw" customClass="NoneCellVC" customModule="TableViewRouteDemo" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pjt-ls-hcl">
-                        <rect key="frame" x="14" y="-3" width="240" height="96"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pjt-ls-hcl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="90.5"/>
                         <color key="backgroundColor" red="1" green="0.43450721149999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Pjt-ls-hcl" secondAttribute="height" multiplier="32:9" id="NGx-0s-Uh2"/>
+                        </constraints>
                     </imageView>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GqG-NB-25Z">
-                        <rect key="frame" x="266" y="30" width="46" height="30"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <state key="normal" title="Button"/>
-                        <connections>
-                            <action selector="clickAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="25D-We-hog"/>
-                        </connections>
-                    </button>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="Pjt-ls-hcl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="SZo-jR-ug5"/>
+                    <constraint firstAttribute="trailing" secondItem="Pjt-ls-hcl" secondAttribute="trailing" id="gyR-B7-9cS"/>
+                    <constraint firstItem="Pjt-ls-hcl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="pnh-ct-vuv"/>
+                    <constraint firstAttribute="bottom" secondItem="Pjt-ls-hcl" secondAttribute="bottom" id="sxp-LF-cuf"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="imgTest" destination="Pjt-ls-hcl" id="FPL-xT-4ul"/>
             </connections>
-            <point key="canvasLocation" x="-257" y="-309"/>
+            <point key="canvasLocation" x="-257" y="-309.5"/>
         </tableViewCell>
     </objects>
 </document>

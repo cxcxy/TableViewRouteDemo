@@ -23,6 +23,7 @@
 		2D2D51131DD2F5CF00A759E8 /* BaseTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D2D51111DD2F5CF00A759E8 /* BaseTableViewController.xib */; };
 		2D2D51161DD31BE700A759E8 /* NoneCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2D51141DD31BE700A759E8 /* NoneCellVC.swift */; };
 		2D2D51171DD31BE700A759E8 /* NoneCellVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D2D51151DD31BE700A759E8 /* NoneCellVC.xib */; };
+		2DDC99D21DDC2D6D00201856 /* UIImage+RemoteSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DDC99D11DDC2D6D00201856 /* UIImage+RemoteSize.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,9 @@
 		2D2D51111DD2F5CF00A759E8 /* BaseTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseTableViewController.xib; sourceTree = "<group>"; };
 		2D2D51141DD31BE700A759E8 /* NoneCellVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoneCellVC.swift; sourceTree = "<group>"; };
 		2D2D51151DD31BE700A759E8 /* NoneCellVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoneCellVC.xib; sourceTree = "<group>"; };
+		2DDC99D01DDC2D6D00201856 /* UIImage+RemoteSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RemoteSize.h"; sourceTree = "<group>"; };
+		2DDC99D11DDC2D6D00201856 /* UIImage+RemoteSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RemoteSize.m"; sourceTree = "<group>"; };
+		2DDC99D61DDC2E4900201856 /* TableViewRouteDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TableViewRouteDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,10 @@
 		2D2D50E71DD2F2CC00A759E8 /* TableViewRouteDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2DDC99CF1DDC2D6D00201856 /* UIImageSize */,
 				2D2D50E81DD2F2CC00A759E8 /* AppDelegate.swift */,
 				2D2D50EA1DD2F2CC00A759E8 /* ViewController.swift */,
+				2DDC99D61DDC2E4900201856 /* TableViewRouteDemo-Bridging-Header.h */,
 				2D0043EE1DD322B800A7D98A /* testVC.swift */,
 				2D0043EF1DD322B800A7D98A /* testVC.xib */,
 				2D2D510C1DD2F38700A759E8 /* SecondVC.swift */,
@@ -124,6 +130,15 @@
 				2D2D50FF1DD2F2CC00A759E8 /* Info.plist */,
 			);
 			path = TableViewRouteDemoUITests;
+			sourceTree = "<group>";
+		};
+		2DDC99CF1DDC2D6D00201856 /* UIImageSize */ = {
+			isa = PBXGroup;
+			children = (
+				2DDC99D01DDC2D6D00201856 /* UIImage+RemoteSize.h */,
+				2DDC99D11DDC2D6D00201856 /* UIImage+RemoteSize.m */,
+			);
+			path = UIImageSize;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +256,7 @@
 				2D2D51161DD31BE700A759E8 /* NoneCellVC.swift in Sources */,
 				2D0043EC1DD320E500A7D98A /* TwoCellVC.swift in Sources */,
 				2D2D50E91DD2F2CC00A759E8 /* AppDelegate.swift in Sources */,
+				2DDC99D21DDC2D6D00201856 /* UIImage+RemoteSize.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +397,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WOW.TableViewRouteDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/chenxu/Desktop/TableViewRouteDemo/TableViewRouteDemo/TableViewRouteDemo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -393,6 +410,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WOW.TableViewRouteDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/chenxu/Desktop/TableViewRouteDemo/TableViewRouteDemo/TableViewRouteDemo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
